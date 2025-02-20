@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <!-- <link rel="stylesheet" href="templates/css/bootstrap.min.css">
+    <link rel="stylesheet" href="templates/css/style.css"> -->
+</head>
+<body>
+    <form>
+        <div class="form-row d-flex align-items-center justify-content-center text-light">
+            <div class="form-group col-md-6">
+                <h1 id="host">{{ host }}</h1>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" class="form-control" name="nome" required>
+
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" class="form-control" name="idade">
+
+                <label for="opcao">Informe seu estado empregatício atual</label>
+                <select name="opcao" id="opcao" class="form-control">
+                    <option value="null">Prefiro não informar</option>
+                    <option value="estudante">Estudante</option>
+                    <option value="clt">CLT</option>
+                    <option value="outro">Outro</option>
+                </select><br>
+
+                <p for="">Você recomendaria esse projeto?</p>
+                <input type="radio" name="recomendacao" id="recomendacao1" value="com-certeza">
+                <label for="recomendacao1" >Com certeza</label><br>
+                
+                <input type="radio" name="recomendacao" id="recomendacao2"  value="talvez">
+                <label for="recomendacao2">Talvez</label><br>
+                
+                <input type="radio" name="recomendacao" id="recomendacao3"  value="nao-sei">
+                <label for="recomendacao3">Não sei</label><br>
+
+                <p>O que gostaria de melhorar <span>(selecione quantas quiser)</span></p>
+                <input type="checkbox" name="check1" id="check1" value="mais-tempo-estudo"> 
+                <label for="check1">Ter mais tempo para estudar</label><br>
+                <input type="checkbox" name="check2" id="check2" value="estudar-gosto">
+                <label for="check2">Estudar mais o que gosto</label><br>
+                <input type="checkbox" name="check3" id="check3" value="gerencia-projeto">
+                <label for="check3">Gerência de projetos</label><br>
+                <input type="checkbox" name="check4" id="check4" value="nodejs">
+                <label for="check4">NodeJS</label><br>
+
+                <p>Algum comentário ou sugestão?</p>
+                <textarea name="comentario" id="comentario" placeholder="Insira sua mensagem aqui..." class="form-control" ></textarea>
+                <button type="submit" id="bt" class="btn btn-success text-light col-12">Enviar</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
