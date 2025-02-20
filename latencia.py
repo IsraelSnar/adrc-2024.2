@@ -30,7 +30,7 @@ def main():
 
     # Criar o gráfico de linha
     plt.figure(figsize=(10, 5))
-    plt.plot(df["tempo_decorrido"], df["Latency"], marker="o", linestyle="-", color="b", label="Latência (ms)")
+    plt.plot(df["tempo_decorrido"]/10, df["Latency"], marker="o", linestyle="None", color="b", label="Latência (ms)")
 
     # Configurar rótulos e título
     plt.xlabel("Tempo Decorrido (s)")
